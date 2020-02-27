@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Phương tiện của bạn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:onClick="startAnimVehicle"
+            android:id="@+id/img_vehicle"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/vehicle"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="50dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="30dp">
+
+        <View
+            android:layout_width="142dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Dầu nhớt"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="140dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_oil_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="65dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_oil"
+                android:onClick="startAnim"
+                android:src = "@mipmap/a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dung tích" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="210dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại dầu" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="285dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:id="@+id/oil"
+            android:text="Dầu nhờn xe số"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="128dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="12dp"
+                    android:text="800ml" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="35dp"
+                    android:text="Đa cấp" />
+
+                <TextView
+                    android:id="@+id/cost_oil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:text="68,000 VNĐ" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_gravity="start"
+            android:id="@+id/code_oil"
+            android:text="(MA SL 10W-30)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_oil_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="65dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:paddingLeft="130dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dung tích" />
+
+        <TextView
+            android:paddingLeft="285dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Dầu giảm xóc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200ml"/>
+
+                <TextView
+                    android:paddingLeft="105dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="34,000 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp">
+
+        <CheckBox
+            android:id="@+id/check_oil_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:onClick="startAnim" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="70dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startAnim"
+                android:src="@mipmap/a4" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="130dp"
+            android:text="Dung tích"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="285dp"
+            android:text="Giá bán lẻ (chưa VAT)"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="40dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Dầu hộp số"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120ml"/>
+
+                <TextView
+                    android:paddingLeft="105dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="32,000 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_oil_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/a5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dung tích" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="285dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="42dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Dầu phanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200ml"/>
+
+                <TextView
+                    android:paddingLeft="105dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="47,000 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="150dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lốp xe"/>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="140dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_tire_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xe" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="42dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Lốp trước"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tire_1"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cost_tire_1"
+                    android:paddingLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_tire_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xe" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="50dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Lốp sau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tire_2"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cost_tire_2"
+                    android:paddingLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="150dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ắc quy"/>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="140dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_accumulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xe" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="55dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Ắc quy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/accumulator"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cost_accumulator"
+                    android:paddingLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="140dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhông xích"/>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="140dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_chain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xe" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="45dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Nhông xích"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/chain"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cost_chain"
+                    android:paddingLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="145dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Má phanh"/>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="140dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_brake_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="57dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/e1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xe" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="35dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Bộ má phanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/brake_1"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cost_brake_1"
+                    android:paddingLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_brake_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/e2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xe" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Bộ má phanh dầu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/brake_2"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cost_brake_2"
+                    android:paddingLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="155dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bugi"/>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="140dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_spark_plug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xe" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="55dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Bugi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/spark_plug"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cost_spark_plug"
+                    android:paddingLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="135dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tấm lọc gió"/>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="140dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_air_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xe" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="40dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Tấm lọc gió"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/air_filter"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cost_air_filter"
+                    android:paddingLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="130dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nước làm mát"/>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="140dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:onClick="startAnim"
+            android:id="@+id/check_cooling_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnim"
+                android:src = "@mipmap/h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xe" />
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingLeft="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá bán lẻ (chưa VAT)" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="31.5dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:text="Nước làm mát"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:paddingLeft="128dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cooling_water"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cost_cooling_water"
+                    android:paddingLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VNĐ"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="135dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán"/>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:layout_width="140dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Phụ tùng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            <TextView
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Số lượng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:paddingLeft="235dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Thành tiền"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            
+        </FrameLayout>
+
+        <LinearLayout
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_oil"
+                android:paddingBottom="10dp"
+                android:text="Dầu nhờn xe số"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_oil_1"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_oil_1"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Dầu giảm xóc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_oil_2"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_oil_2"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Dầu hộp số"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_oil_3"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_oil_3"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Dầu phanh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_oil_4"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_oil_4"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Lốp trước"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_tire_1"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_tire_1"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Lốp sau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_tire_2"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_tire_2"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Ắc quy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_accumulator"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_accumulator"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Nhông xích"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_chain"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_chain"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Bộ má phanh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_brake_1"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_brake_1"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Bộ má phanh dầu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_brake_2"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_brake_2"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingBottom="10dp"
+                    android:text="Bugi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_spark_plug"
+                    android:paddingLeft="25dp"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/payment_spark_plug"
+                    android:layout_gravity="end"
+                    android:text="0 VNĐ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Tấm lọc gió"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_air_filter"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_air_filter"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:text="Nước làm mát"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/quantity_cooling_water"
+                android:paddingLeft="25dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/payment_cooling_water"
+                android:layout_gravity="end"
+                android:text="0 VNĐ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+            <FrameLayout
+                android:paddingTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:text="Tổng thanh toán                     :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="130dp"
+                    android:id="@+id/payment"
+                    android:layout_gravity="center"
+                    android:text="0 VNĐ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:text="Tổng số phụ tùng thay thế   :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="70dp"
+                    android:id="@+id/quantity"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/apply"
+                    android:onClick="apply"
+                    android:background="@drawable/selector_button"
+                    android:text="Đồng ý"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

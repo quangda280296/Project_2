@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Phương tiện của bạn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="startAnimVehicle"
+                android:id="@+id/img_vehicle"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/vehicle"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Phụ tùng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Còn đi được"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:paddingLeft="250dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Ước tính thời gian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_oil_1"
+                    android:paddingBottom="10dp"
+                    android:text="Dầu nhờn xe số"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_oil_1"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_oil_1"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_oil_2"
+                    android:paddingBottom="10dp"
+                    android:text="Dầu giảm xóc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_oil_2"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_oil_2"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_oil_3"
+                    android:paddingBottom="10dp"
+                    android:text="Dầu hộp số"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_oil_3"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_oil_3"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_oil_4"
+                    android:paddingBottom="10dp"
+                    android:text="Dầu phanh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_oil_4"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_oil_4"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_tire_1"
+                    android:paddingBottom="10dp"
+                    android:text="Lốp trước"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_tire_1"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_tire_1"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_tire_2"
+                    android:paddingBottom="10dp"
+                    android:text="Lốp sau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_tire_2"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_tire_2"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_accumulator"
+                    android:paddingBottom="10dp"
+                    android:text="Ắc quy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_accumulator"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_accumulator"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_chain"
+                    android:paddingBottom="10dp"
+                    android:text="Nhông xích"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_chain"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_chain"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_brake_1"
+                    android:paddingBottom="10dp"
+                    android:text="Bộ má phanh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_brake_1"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_brake_1"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_brake_2"
+                    android:paddingBottom="10dp"
+                    android:text="Bộ má phanh dầu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_brake_2"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_brake_2"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_spark_plug"
+                    android:paddingBottom="10dp"
+                    android:text="Nước làm mát"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_spark_plug"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_spark_plug"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_air_filter"
+                    android:paddingBottom="10dp"
+                    android:text="Tấm lọc gió"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_air_filter"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_air_filter"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_cooling_water"
+                    android:paddingBottom="10dp"
+                    android:text="Nước làm mát"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity_cooling_water"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="0 km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingLeft="250dp"
+                    android:id="@+id/payment_cooling_water"
+                    android:layout_gravity="center"
+                    android:text="0 ngày"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
